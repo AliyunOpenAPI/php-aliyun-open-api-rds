@@ -26,12 +26,12 @@
   },
   "autoload": {
     "psr-4": {
-      "Aliyun\\RDS\\": "src",
-      "Aliyun\\RDS\\Tests\\": "tests"
+      "Aliyun\\RDS\\": "src"
     }
   },
   "autoload-dev": {
     "psr-4": {
+      "Aliyun\\RDS\\Tests\\": "tests"
     }
   },
   "scripts": {
