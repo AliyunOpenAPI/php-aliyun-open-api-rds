@@ -33,6 +33,8 @@ class ModifySecurityIpsRequest extends RpcAcsRequest
     private $clientToken;
 
     private $dBInstanceId;
+    
+    private $dBInstanceIPArrayName;
 
     private $securityIps;
 
@@ -134,11 +136,18 @@ class ModifySecurityIpsRequest extends RpcAcsRequest
         $this->ownerAccount                    = $ownerAccount;
         $this->queryParameters["OwnerAccount"] = $ownerAccount;
     }
-
-  public function setDBInstanceIPArrayName($DBInstanceIPArrayName)
+    
+    
+    public function getDBInstanceIPArrayName()
     {
-        $this->DBInstanceIPArrayName                      = $DBInstanceIPArrayName;
-        $this->queryParameters["DBInstanceIPArrayName"] = $DBInstanceIPArrayName;
+        return $this->dBInstanceIPArrayName;
     }
 
+  
+    public function setDBInstanceIPArrayName($dBInstanceIPArrayName)
+    {
+        $this->dBInstanceIPArrayName                    = $dBInstanceIPArrayName;
+        $this->queryParameters["DBInstanceIPArrayName"] = $dBInstanceIPArrayName;
+    }
+    
 }
