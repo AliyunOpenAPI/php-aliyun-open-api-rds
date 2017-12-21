@@ -135,4 +135,10 @@ class ModifySecurityIpsRequest extends RpcAcsRequest
         $this->queryParameters["OwnerAccount"] = $ownerAccount;
     }
 
+  public function setDBInstanceIPArrayName($DBInstanceIPArrayName)
+    {
+        $this->DBInstanceIPArrayName                      = $DBInstanceIPArrayName;
+        $this->queryParameters["DBInstanceIPArrayName"] = $DBInstanceIPArrayName;
+    }
+
 }
